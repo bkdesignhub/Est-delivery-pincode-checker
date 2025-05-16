@@ -13,11 +13,11 @@ $option_keys = [
     'edpc_token_time',
     'edpc_api_mode',
     'edpc_pickup_pincode',
-    'edpc_estimate_button_bg',
-    'edpc_estimate_button_hover_bg',
-    'edpc_estimate_icon_url',
-    'edpc_estimate_icon_width',
-    'edpc_estimate_icon_height',
+    'edpc_button_bg',
+    'edpc_button_hover_bg',
+    'edpc_icon_url',
+    'edpc_icon_width',
+    'edpc_icon_height',
 ];
 
 foreach ($option_keys as $key) {
