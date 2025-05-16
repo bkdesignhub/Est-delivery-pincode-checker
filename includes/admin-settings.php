@@ -1,6 +1,6 @@
 <?php
 add_action('admin_menu', function () {
-    add_menu_page('EDPC Settings', 'EDPC Settings', 'manage_options', 'edpc-settings', 'edpc_settings_page');
+    add_menu_page('EDPC Settings', 'EDPC Settings', 'manage_options', 'edpc-settings', 'edpc_settings_page', plugins_url('assets/edpc-icon.png', __DIR__ . '/'));
 });
 
 function edpc_settings_page() {
