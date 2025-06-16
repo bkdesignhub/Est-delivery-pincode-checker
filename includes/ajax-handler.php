@@ -96,7 +96,6 @@ function check_edpc_pincode_callback() {
             !empty($estimate_result['data']['available_courier_companies'])
         ) {
             $firstCourier = $estimate_result['data']['available_courier_companies'][0];
-
             $estimatedDeliveryDays = $firstCourier['estimated_delivery_days'] ?? 'N/A';
             $estimatedDeliveryDate = $firstCourier['etd'] ?? 'N/A';
 

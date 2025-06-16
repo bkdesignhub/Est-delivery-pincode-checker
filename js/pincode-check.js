@@ -18,10 +18,10 @@ jQuery(document).ready(function ($) {
         // AJAX call
         $.ajax({
             type: 'POST',
-            url: edpc_ajax.ajax_url, 
+            url: edpc_ajax.ajax_url, // ✅ Updated variable name
             data: {
-                action: 'check_edpc_pincode',
-                nonce: edpc_ajax.nonce,
+                action: 'check_edpc_pincode', // ✅ Updated action name
+                nonce: edpc_ajax.nonce,       // ✅ Updated nonce
                 pincode: pincode
             },
             success: function (response) {

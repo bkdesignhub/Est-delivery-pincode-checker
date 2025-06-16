@@ -13,6 +13,7 @@ define('EDPC_URL', plugin_dir_url(__FILE__));
 
 require_once EDPC_DIR . 'includes/ajax-handler.php';
 require_once EDPC_DIR . 'includes/admin-settings.php';
+require_once EDPC_DIR . 'includes/mpc-woocommerce-hooks.php';
 
 function edpc_enqueue_scripts() {
     wp_enqueue_script('jquery');
@@ -37,25 +38,21 @@ function edpc_form_shortcode() {
     <style>
     #check-pincode {
         background: <?php echo esc_attr($button_bg); ?>;
-        border: none;
-        color: white;
-        padding: 8px 16px;
-        cursor: pointer;
     }
     #check-pincode:hover {
         background: <?php echo esc_attr($button_hover_bg); ?>;
     }
     </style>
 
-    <div class="shiprocket-check-container">
-        <div class="shiprocket-input-wrapper">
-            <img src="<?php echo esc_url($icon_url); ?>" class="shiprocket-icon" alt="Location Icon"
+    <div class="edpc-check-container">
+        <div class="edpc-input-wrapper">
+            <img src="<?php echo esc_url($icon_url); ?>" class="edpc-icon" alt="Location Icon"
      style="width: <?php echo esc_attr($icon_width); ?>px; height: <?php echo esc_attr($icon_height); ?>px;">
 
             <input type="text" id="pincode" placeholder="Enter pincode" maxlength="6" pattern="\d{6}">
             <button type="button" id="check-pincode">CHECK</button>
         </div>
-        <div id="pincode-result" class="shiprocket-result-message" style="display: none;"></div>
+        <div id="pincode-result" class="edpc-result-message" style="display: none;"></div>
     </div>
     <?php
     return ob_get_clean();
