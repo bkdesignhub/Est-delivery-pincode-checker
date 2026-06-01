@@ -2,11 +2,6 @@
 
 > Instantly check delivery availability and estimated delivery dates by pincode using Shiprocket API.
 
-![WordPress](https://img.shields.io/badge/WordPress-6.5+-blue?logo=wordpress)
-![WooCommerce](https://img.shields.io/badge/WooCommerce-Compatible-purple?logo=woocommerce)
-![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?logo=php)
-![Version](https://img.shields.io/badge/Version-2.0-success)
-![License](https://img.shields.io/badge/License-GPLv2-green)
 
 ---
 
@@ -215,7 +210,7 @@ Absolutely. The plugin is fully responsive.
 
 📦 GitHub Repository: https://github.com/bkdesignhub/Est-delivery-pincode-checker
 
-📧 Support: [bkdesigner0@gmail.com](mailto:bkdesigner0@gmail.com)
+📧 Support: [bkdesigner0@gmail.com]
 
 ---
 
